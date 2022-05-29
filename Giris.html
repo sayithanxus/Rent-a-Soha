@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <link rel="stylesheet" href="css/giris.css">
+</head>
+<body>
+    <a href="index.html"><img src="assets/logo.png" alt=""></a>
+
+
+    <div class="kutu">
+        <div class="kutu_kutu">
+                    <div class="giris">Giriş Yap</div>
+                <form action="./backend/girisYap.php" method="post">
+                    <input autofocus placeholder="E-posta Adresinizi Giriniz." required id="email" type="text" name="eposta"> <br>
+                
+                    <input placeholder="Şifrenizi Giriniz." required id="password" type="password" autocomplete="off" minlength="7" maxlength="23" name="sifre"> <br>
+                
+                    <input type="submit" value="Giriş Yap" name="gonder" style="background: #02b8dd; color: white;">
+                </form>
+            
+
+
+        </div><!--kutu_kutu Son-->
+    </div><!--kutu Son-->
+
+    
+</body>
+</html>

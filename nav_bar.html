@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-5.1.3-dist/css/bootstrap.min.css"
+    />
+    <title>nav_bar</title>
+    <style>
+       @import url('https://fonts.google.com/css?family=Montserrat:500');
+       *{
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+       }
+       li,a{
+           font-family: "Montserrat",sans-serif;
+           font-size: 16px;
+           font-family: 500;
+           text-decoration: none;
+           color: black;
+       }
+       header{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 30px 10%;
+           background-color: white;
+       }
+       .logo{
+           height: 50px;
+           cursor: pointer;
+       }
+       .nav_links{
+           list-style: none;
+       }
+       .nav_links li{
+           display: inline-block;
+           padding: 0 20px;
+       }
+       .nav_links li a{
+           transition: all 0.7s ease 0s;
+       }
+       .nav_links li a:hover{
+           color: #02b8dd;
+           font-size: 18px;
+       }
+       ul li ul{
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.7s ease;
+            margin-top: 5px;
+            position: absolute;
+            display:flex;
+            border: 1px black solid;
+            flex-direction: column;
+            line-height: 18px;
+            padding: 10px 0;
+            border-radius: 10px;
+        }
+        ul li:hover > ul , ul li ul:hover{
+            visibility: visible;
+            opacity: 1;
+        }
+        ul li ul li{
+            clear: both;
+        }
+        .login{
+            line-height: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+        @media screen and (max-width: 940px) {
+        
+        header {
+        justify-content: center;
+        text-align: center;
+        display:block;
+        }
+        nav img{
+        justify-content: center;
+        text-align: center;
+        display:block;
+        }
+        .nav_links li{
+        display:block;
+        width: 100%;
+        padding: 5px 0 ;
+        box-sizing: border-box;
+        }
+        .nav_links:first-child{
+            padding: 10px 0 0 0;
+            margin: 0;
+        }
+        .nav_links:second-child{
+            padding: 10px 0 0 0;
+            margin: 0;
+        }
+
+        }
+
+
+        
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.php"><img class="logo" src="assets/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="rezervasyonlarım.html">Rezervasyon</a>
+                    <ul>
+                        <li><a href="rezervasyonlarım.html">Rezervasyonlarım</a></li>
+                        <li><a href="rezerve_olustur.html">Rezervasyon Oluştur</a></li>
+                    </ul>
+                </li>
+                <li><a href="tum_araclar.html">Araçlarımız</a>
+                    <ul class="acilir">
+                        <li><a href="tum_araclar.html">Tüm Araçlar</a></li>
+                        <hr>
+                        <li><a href="ekonomik_sinif.html">Ekonomik Sınıfı Araçlar</a></li>
+                        <li><a href="konfor_sinif.html">Konfor Sınıfı Araçlar</a></li>
+                        <li><a href="premium_sinif.html">Premium Sınıfı Araçlar</a></li>
+                        <li><a href="luks_araclar.html">Lüks Sınıfı Araçlar</a></li>
+                        <li><a href="premium_sinif.html">Prestij Sınıfı Araçlar</a></li>
+                    </ul>
+                </li>
+                <li><a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="nav_links login">
+                <li><a href="giris.html">Giriş Yap</a></li>
+                <li><a href="Kayit_ol.html">Üye Ol</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    
+</body>
+</html>
